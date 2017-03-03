@@ -11,9 +11,9 @@ namespace xamarin.forms.cats
     {
         public App()
         {
-            InitializeComponent();
+            var content = new Views.CatsPage();
 
-            MainPage = new xamarin.forms.cats.MainPage();
+            MainPage = new NavigationPage(content);
         }
 
         protected override void OnStart()
